@@ -15,7 +15,7 @@ License.init({
     }
 }, {
     sequelize,
-    modelName: "user",
+    modelName: "license",
 })
 
 module.exports = License;

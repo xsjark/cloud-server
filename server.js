@@ -33,7 +33,7 @@ app.put("/license/:id", async (req, res) => {
     res.send(license);
 })
 
-app.delete("/license/id", async (req, res) => {
+app.delete("/license/:id", async (req, res) => {
     const requestedId = req.params.id;
     const license = await License.findOne({ where: { id: requestedId}});
     res.send("license deleted")
