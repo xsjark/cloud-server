@@ -4,7 +4,6 @@ const sequelize = require("../database")
 class License extends Model { }
 
 License.init({
-    // TODO: owner
     username: {
         type: DataTypes.STRING
     },
